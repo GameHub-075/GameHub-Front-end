@@ -15,6 +15,10 @@ export const routes: Routes = [
         loadChildren: () => import('./modules/login/login-routing.module').then(m => m.LoginRoutingModule)
     },
     {
+        path: 'Erro-generico',
+        loadChildren: () => import('./modules/erros/erro.module').then(m => m.ErroModule)
+    },
+    {
         path: 'NotFound',
         loadChildren: () => import('./modules/notFound/notFound-routing.module').then(m => m.NotFoundRoutingModule)
     }
