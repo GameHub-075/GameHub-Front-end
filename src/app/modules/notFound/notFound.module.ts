@@ -7,4 +7,4 @@ import { NotFoundRoutingModule } from "./notFound-routing.module";
     imports: [CommonModule, NotFoundRoutingModule],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class HomeModule { }
+export class NotFoundModule { }

@@ -1,0 +1,36 @@
+import { LOCALE_ID, NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HomeModule } from './modules/home/home.module';
+import { LoginModule } from './modules/login/login.module';
+import { ErroModule } from './modules/erros/erro.module';
+import { NotFoundModule } from './modules/notFound/notFound.module';
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+
+    HomeModule,
+    LoginModule,
+    ErroModule,
+    NotFoundModule
+  ],
+  providers: [
+    {
+      provide: LOCALE_ID, useValue: 'pt'
+    }
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+  constructor() {
+
+  }
+}
