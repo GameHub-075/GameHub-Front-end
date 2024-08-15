@@ -1,0 +1,24 @@
+.content {
+    border-radius: 15px;
+    box-shadow: #00000087 -15px 15px 45px;
+}
+
+.login {
+    width: 417px;
+    height: 640px;
+    background-color: var(--CinzaEscuro);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 47px;
+    padding-right: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.erro {
+    width: 800px;
+    height: 600px;
+    background-color: var(--CinzaClaro);
+}

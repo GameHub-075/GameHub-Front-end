@@ -1,0 +1,50 @@
+.content {
+    width: 178px;
+    height: 45px;
+    background-color: var(--CinzaClaro);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    gap: 12px;
+    // transform: scale(0.9);
+    position: relative;
+    overflow: hidden;
+}
+
+.contentTexto {
+    background-color: var(--CinzaMedio);
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    color: var(--Branco);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0 10px;
+    position: absolute;
+    width: 105px;
+    transition: width 0.3s ease-in-out;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    margin-left: 135px;
+}
+
+.content:hover .contentTexto {
+    width: calc(100% - 42px);
+}
+
+.content:hover {
+    cursor: pointer;
+    background-color: var(--CinzaMedio);
+    // transform: scale(1);
+}
+
+.content:active{
+    cursor: pointer;
+    // transform: scale(0.9);
+}

@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { BotaoComponent } from "../../shared/components/botao/botao.component";
+import { CardComponent } from "../../shared/components/card/card.component";
 
 @Component({
     selector: "home",

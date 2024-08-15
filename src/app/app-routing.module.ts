@@ -17,8 +17,8 @@ const routes: Routes = [
     loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
   },
   {
-    path: 'Erro-generico',
-    loadChildren: () => import('./modules/erros/erro.module').then(m => m.ErroModule)
+    path: 'Erro',
+    loadChildren: () => import('./modules/error/error.module').then(m => m.ErrorModule)
   },
   {
     path: 'NotFound',

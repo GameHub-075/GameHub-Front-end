@@ -5,13 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { LoginModule } from './modules/login/login.module';
-import { ErroModule } from './modules/erros/erro.module';
 import { NotFoundModule } from './modules/notFound/notFound.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +18,6 @@ import { NotFoundModule } from './modules/notFound/notFound.module';
 
     HomeModule,
     LoginModule,
-    ErroModule,
     NotFoundModule
   ],
   providers: [

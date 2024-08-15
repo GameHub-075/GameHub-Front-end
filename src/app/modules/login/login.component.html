@@ -1,1 +1,26 @@
-<div>LOGIN</div>
+<div class="content">
+    <app-card [tipoCard]="tipoCard">
+        <div>
+            <img src="./assets/image/logo/Logo.svg" alt="" srcset="">
+        </div>
+        <div class="contentTextos">
+            <h1 class="titulo">Conecte-se e Avalie Jogos com Facilidade!</h1>
+            <p class="texto">
+                Junte-se à nossa comunidade de gamers com apenas um clique!
+                Utilize sua conta do Google ou Steam para acessar avaliações
+                exclusivas e compartilhar suas experiências com outros jogadores.
+                É rápido, seguro e fácil!
+            </p>
+        </div>
+        <hr>
+        <div class="contentBotoes">
+            <app-botao-acessar iconeBotao="Google"></app-botao-acessar>
+            <app-botao-acessar iconeBotao="Steam"></app-botao-acessar>
+        </div>
+        <div class="contentRodaPe">
+            <p>🔐 Segurança Garantida: Seus dados estão protegidos com criptografia.
+                Ao fazer login, você concorda em compartilhar seus dados.
+            </p>
+        </div>
+    </app-card>
+</div>
