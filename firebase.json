@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/gamehub-front-end",
     "ignore": [
       "firebase.json",
       "**/.*",
