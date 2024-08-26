@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { LoginModule } from './modules/login/login.module';
 import { NotFoundModule } from './modules/notFound/notFound.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { NotFoundModule } from './modules/notFound/notFound.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+
 
     HomeModule,
     LoginModule,

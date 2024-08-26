@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { CardComponent } from "../../shared/components/card/card.component";
 import { TipoCard } from "../../core/models/card-models";
 import { BotaoAcessarComponent } from "../../shared/components/botao-acessar/botao-acessar.component";
+import { AuthService } from "../../core/auth/firebase.service";
 
 @Component({
     selector: "login",
@@ -15,7 +16,11 @@ export class LoginComponent {
         tipo: 'login'
     }
 
-    constructor() {
+    constructor(private auth: AuthService) {
 
+    }
+
+    login() {
+        this.auth.loginWithGoogle();
     }
 }
