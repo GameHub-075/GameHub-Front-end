@@ -43,3 +43,4 @@ Thumbs.db
 
 .env
 environment.ts
+angular.json

@@ -1,0 +1,44 @@
+{
+    "topGames": [
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/GTA_V.jpg"
+        },
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/Black_Myth_Wukong.jpg"
+        },
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/CyberBug_1.jpg"
+        },
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/CyberBug.jpg"
+        },
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/Dark_Souls_3.jpg"
+        },
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/DOU.jpg"
+        },
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/Fifa.jpg"
+        },
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/God_Of_War.jpg"
+        },
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/Halo.jpg"
+        },
+        {
+            "nome": "GTA",
+            "urlImg": "./assets/image/background/RE_4_Remake.jpg"
+        }
+    ]
+}

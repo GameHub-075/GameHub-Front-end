@@ -1,0 +1,86 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.img {
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+/* Animação para entrada suave sem desfocar o item central */
+@keyframes smoothIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes smoothOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+
+/* Estilo para o item central do carrossel */
+.centro {
+    height: 480px;
+    width: 400px;
+    animation: smoothIn 0.6s ease-in-out;
+    z-index: 3;
+    opacity: 1;
+}
+
+/* Estilo para os itens ao lado do centro */
+.meio {
+    height: 340px;
+    width: 260px;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+/* Estilo para os itens das extremidades */
+.ponta {
+    height: 250px;
+    width: 170px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* Animação para itens saindo do carrossel */
+.saindo {
+    animation: smoothOut 0.6s ease-in-out forwards;
+}
+
+/* Remove a animação de smoothIn para itens entrando */
+.entrando {
+    opacity: inherit; /* Mantém a opacidade de acordo com a posição no carrossel */
+    transform: inherit; /* Mantém a transformação de escala de acordo com a posição */
+}
+
+/* Efeito de hover para melhorar a interação */
+.img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}

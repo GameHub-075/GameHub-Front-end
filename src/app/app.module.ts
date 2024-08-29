@@ -8,6 +8,9 @@ import { LoginModule } from './modules/login/login.module';
 import { NotFoundModule } from './modules/notFound/notFound.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
+import { HeaderComponent } from "./layout/header/header.component";
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,16 +21,18 @@ import { environment } from '../environments/environment';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-
-
     HomeModule,
     LoginModule,
-    NotFoundModule
+    NotFoundModule,
+    HeaderComponent,
+
+    HttpClientModule,
+    CommonModule
   ],
   providers: [
     {
       provide: LOCALE_ID, useValue: 'pt'
-    }
+    },
   ],
   bootstrap: [AppComponent]
 })

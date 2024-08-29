@@ -1,0 +1,8 @@
+<div class="content">
+    <img src="./assets/utils/seta-esquerda-branca.svg" alt="Voltar" (click)="voltar()">
+    <div *ngFor="let jogo of carregaTopGames; index as i">
+        <div [ngStyle]="{'background-image': 'url(' + jogo.urlImg + ')'}" alt="" srcset="" class="img"
+            [ngClass]="getClassForIndex(i+1)"></div>
+    </div>
+    <img src="./assets/utils/seta-direita-branca.svg" alt="Avançar" (click)="avancar()">
+</div>
